@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Header with background image and navigation */
+header {
+    background: linear-gradient(rgba(24, 40, 72, 0.85), rgba(24, 40, 72, 0.85)), 
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') center/cover;
+    color: white;
+    padding: 100px 0 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Navigation in header - left aligned */
+.header-nav {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 20px 60px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.header-nav li {
+    margin: 0;
+}
+
+.header-nav a {
+    color: #d6e0ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: white;
+}
+
+/* Content */
+main {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #182848;
+}
+
+h3 a {
+    color: #182848;        /* sama väri kuin h3:lla */
+    text-decoration: none; /* poistaa alleviivauksen */
+}
+
+
+
+.item {
+    margin-bottom: 20px;
+}
+
+/* Work section title */
+.work-title {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #182848;
+}
+
+/* Cards grid layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Big vertical cards */
+.big-work-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-work-card h3 {
+    font-size: 1.6rem;
+    margin: 0 0 10px;
+    color: #182848;
+}
+
+.big-work-card .years {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.big-work-card p {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Hover animation */
+.big-work-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+/* Spacing under sidebar */
+.work-section {
+    padding-top: 20px;
+}
+
+/* Kuvien responsiivisuus */
+.item img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    object-fit: contain;   /* Estää venymisen */
+}
+
+/* Responsiivisuus */
+@media (max-width: 900px) {
+    header {
+        padding: 60px 0 0;
+        min-height: 350px;
+    }
+    
+    .header-content {
+        padding: 0 30px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+    }
+    
+    .header-nav ul {
+        padding: 20px 30px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+
+    .item img {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+    
+    /* Kortit allekkain mobiilissa */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .big-work-card {
+        font-size: 1.1rem;
+        padding: 25px;
+    }
+    
+    .big-work-card h3 {
+        font-size: 1.5rem;
+    }
+}
