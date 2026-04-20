@@ -16,86 +16,133 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
+    <header class="banner">
+        <div class="banner-inner">
             <h1>Hannes Tuomaala</h1>
-            <p>
-                Hei! Kiva kun löysit sivulleni! Olen Hannes Tuomaala, tieto- ja viestintätekniikan
-                opiskelija. Erityisiä kiinnostuksen kohteitani ovat tietoverkkojen suunnittelu ja ylläpito.
-                Lisäksi pidän ohjelmointia ja erilaisia IT-tukitehtäviä mielenkiintoisina.
-                Opiskelujen ja omien projektien kautta olen harjoitellut
-                mm. HTML:ää, CSS:ää, JavaScriptiä, Pythonia. <br><br>
 
-                Etusivulle olen lisännyt kolme tärkeintä työpaikkaani työurani aikana, sekä hieman muuta osaamistani. 
-                Lisäksi sivulta löytyy kouluprojektejani ja yhteystietoni.
+            <p class="subtitle">
+                Tieto- ja viestintätekniikan opiskelija · IT-harjoittelija / junior-työroolit
+            </p>
+
+            <p class="header-intro">
+                Olen tieto- ja viestintätekniikan opiskelija, jolla on käytännön työkokemusta
+                asiakaspalveluympäristöistä ja vahva kiinnostus IT‑alaa kohtaan. Erityisesti
+                minua kiinnostavat tietoverkot ja niiden käytännön toteutus, mutta haluan
+                kehittää osaamistani myös sovellus‑ ja web‑kehityksessä.
             </p>
         </div>
-        
-        <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="projektit.html">Kouluprojektit</a></li>
-                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-            </ul>
+
+        <nav class="top-nav">
+            <a href="index.html" class="active">Etusivu</a>
+            <a href="projektit.html">Kouluprojektit</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="work-section">
-                <h2 class="work-title">Työkokemukseni</h2>
+<main>
+    <section class="work-section">
+        <!-- KOULUTUS -->
+        <h2 class="work-title">Koulutus</h2>
+        <div class="cards-grid">
+            <div class="big-work-card">
+                <p>
+                    <strong>Tieto- ja viestintätekniikkan insinööri</strong><br>
+                    LAB-ammattikorkeakoulu (2024 – )<br><br>
 
-                <div class="cards-grid">
-                    <div class="big-work-card">
-                        <h3>Palveluneuvoja / Senior Palveluneuvoja – DNA Oyj</h3>
-                        <span class="years">2023–</span>
-                        <p>
-                            DNA:lla olen oppinut tarvekartoitusta, reklamaatioiden käsittelyä ja monikanavaista
-                            asiakaspalvelua. Työ on kehittänyt erityisesti viestintätaitojani ja ongelmanratkaisua. Muuttuvassa työympäristössä työskentely on opettanut sopeutumaan uusiin järjestelmiin ja tilanteisiin nopeasti.
-                            Työskentelen säännöllisesti myös englanninkielisen asiakaspalvelun parissa, joka on kehittänyt kieltäni valtavasti.
-                            Vuoden 2026 alusta alkaen siirryin senior palveluneuvojan tehtäviin haastavampien asiakastilanteiden pariin.
-                        </p>
-                    </div>
-
-                    <div class="big-work-card">
-                        <h3>Myyjä – XXL Jyväskylä</h3>
-                        <span class="years">2020–2022</span>
-                        <p>
-                            XXL:ssä työharjoittelussa opin asiakaspalvelua, myyntiä, tiimityötä ja työskentelyä ison ketjun tavaratalossa.
-                            Lisäksi opin järjestelmällistä työskentelyä, järjestelmien käyttöä sekä asiakkaan tarpeiden analysointia.
-                            Harjoittelujaksojen kautta sain hyvän kuvan ketjumyynnistä ja asiakaskokemuksen
-                            tärkeydestä.
-                        </p>
-                    </div>
-
-                    <div class="big-work-card">
-                        <h3>Maalari – Pintakoti Oy / Safiro Oy</h3>
-                        <span class="years">2018–2023</span>
-                        <p>
-                            Työt sisälsivät katon pinnoitusta, pesua, maalausta, kattoturvatuotteiden asennusta sekä
-                            uusien työntekijöiden perehdytystä. Kädentaitojen lisäksi opin yrittämisestä kokonaisuuden hallintaa myynnin ja logistiikan kautta.
-                        </p>
-                    </div>
-
-                    <div class="big-work-card">
-                        <h3>Muuta osaamista</h3>
-                        <p>
-                            Edellä mainittujen lisäksi olen työskennellyt pätkätöissä mm. ravintolassa ja siivoojana. Valmistuin merkonomiksi 2021 ja kuten otsikossa mainitsin, tällä hetkellä opiskelen tieto- ja viestintätekniikkaa Lahden ammattikorkeakoulussa. 
-                        </p>
-                    </div>
-                    <div class="big-work-card">
-                        <h3>Kielitaito</h3>
-                        <p>
-                            Suomi: Äidinkieli<br>
-                            Englanti: Hyvä suullinen ja kirjallinen taito<br>
-                            Ruotsi: Perusteet
-                        </p>
-
-                    </div>
-                </div>
+                    <strong>Merkonomi</strong><br>
+                    Gradia, Jyväskylä (2019 – 2022)
+                </p>
             </div>
-        </section>
-    </main>
+        </div>
+
+        <!-- TYÖKOKEMUS -->
+        <h2 class="work-title">Työkokemus</h2>
+        <div class="cards-grid">
+
+            <div class="big-work-card">
+                <h3>Palveluneuvoja / Senior Palveluneuvoja – DNA Oyj</h3>
+                <span class="years">2023 –</span>
+                <p>
+                    DNA:lla olen oppinut tarvekartoitusta, reklamaatioiden käsittelyä ja monikanavaista
+                    asiakaspalvelua. Työ on kehittänyt erityisesti viestintätaitojani ja ongelmanratkaisua.
+                    Muuttuvassa työympäristössä työskentely on opettanut sopeutumaan uusiin järjestelmiin
+                    ja tilanteisiin nopeasti. Työskentelen säännöllisesti myös englanninkielisen asiakaspalvelun
+                    parissa, joka on kehittänyt kieltäni valtavasti. Vuoden 2026 alusta alkaen siirryin
+                    senior palveluneuvojan tehtäviin haastavampien asiakastilanteiden pariin.
+                </p>
+            </div>
+
+            <div class="big-work-card">
+                <h3>Myyjä – XXL Jyväskylä</h3>
+                <span class="years">2020 – 2022</span>
+                <p>
+                    XXL:ssä työharjoittelussa opin asiakaspalvelua, myyntiä, tiimityötä ja työskentelyä
+                    ison ketjun tavaratalossa. Lisäksi opin järjestelmällistä työskentelyä, järjestelmien
+                    käyttöä sekä asiakkaan tarpeiden analysointia. Harjoittelujaksojen kautta sain hyvän
+                    kuvan ketjumyynnistä ja asiakaskokemuksen tärkeydestä.
+                </p>
+            </div>
+
+            <div class="big-work-card">
+                <h3>Maalari – Pintakoti Oy / Safiro Oy</h3>
+                <span class="years">2018 – 2023</span>
+                <p>
+                    Työtehtäväni sisälsivät katon pesua ja pinnoitusta, maalaustöitä sekä
+                    kattoturvatuotteidenasennusta. Työhön kuului myös uusien työntekijöiden
+                    perehdyttämistä ja työn sujuvuuden varmistamista työmailla. Kädentaitojen
+                    lisäksi työ opetti kokonaisuuksien hallintaa, vastuunkantoa ja
+                    suunnitelmallisuutta. Sain myös käytännön ymmärrystä yrittäjämäisestä
+                    toiminnasta myynnin, aikataulutuksen ja logistiikan näkökulmasta.
+                </p>
+            </div>
+
+            <div class="big-work-card">
+                <h3>Muuta osaamista</h3>
+                <p>
+                    Pätkätöitä ravintola- ja siivousalalla. Opintojen ja projektien kautta
+                    kokemusta HTML:stä, CSS:stä, JavaScriptistä ja Pythonista.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- KIELITAITO -->
+        <h2 class="work-title">Kielitaito</h2>
+        <div class="cards-grid">
+            <div class="big-work-card">
+                <p>
+                    🇫🇮 <strong>Suomi</strong>: Äidinkieli<br><br>
+                    🇬🇧 <strong>Englanti</strong>: Hyvä suullinen ja kirjallinen taito<br><br>
+                    🇸🇪 <strong>Ruotsi</strong>: Perusteet
+                </p>
+            </div>
+        </div>
+
+        <h2 class="work-title">Oppimistavoitteet ja kiinnostuksen kohteet</h2>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Mitä haluan oppia seuraavaksi</h3>
+                    <p>
+                        Olen erityisen kiinnostunut tietoverkoista ja niiden käytännön toteutuksesta.
+                        Haluan syventää osaamistani verkkolaitteiden, kuten kytkinten ja reitittimien,
+                        konfiguroinnissa sekä ymmärtää paremmin verkkojen toimintaa ja vikatilanteiden
+                        selvittämistä. Tietoverkkojen suunnittelu, ylläpito ja käytännönläheinen
+                        tekeminen ovat minulle erityisen motivoivia osa-alueita.
+                    </p>
+
+                    <p>
+                        Tietoverkko-osaamisen rinnalla haluan kehittää taitojani myös sovellus- ja
+                        web‑kehityksessä. Tavoitteenani on oppia lisää modernien sovellusten ja
+                        verkkopalveluiden toiminnasta, ohjelmointikäytännöistä sekä siitä, miten eri
+                        järjestelmät ja palvelut toimivat yhdessä. Pyrin kehittämään itseäni sekä verkkojen että
+                        ohjelmistojen parissa.
+                    </p>
+
+            </div>
+        </div>
+    </section>
+</main>
+
 
     <!-- Bootstrap JS -->
     <script
